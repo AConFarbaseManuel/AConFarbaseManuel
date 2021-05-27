@@ -41,9 +41,13 @@
             <br><br><label class="salidas">Su Materia: </label> <output id="salidaMateria"></output>
             <br><br><label class="salidas">Su Fecha: </label> <output id="salidaFecha"></output>
         </fieldset>
-
     </div>
     <script src="js/datos.js"></script>
+    <script>
+    const auth=firebase.auth();
+     const provider = new firebase.auth.GoogleAuthProvider();
+       const provider.setCustomParameters({prompt: "select_account});
+    </script>
     
 </body>
 </html>
