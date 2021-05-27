@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
     <title>Document</title>
 </head>
 <body>
+ 
     <div class="etiqueta">
         <header>Ingrese los siguientes datos</header>
         <br><br>
@@ -35,7 +42,24 @@
         </fieldset>
 
     </div>
+    <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDuImL2B-dUpzeCrAtqQaFJgZXCfxDPhfQ",
+    authDomain: "aconfarbasemanuel-47117.firebaseapp.com",
+    projectId: "aconfarbasemanuel-47117",
+    storageBucket: "aconfarbasemanuel-47117.appspot.com",
+    messagingSenderId: "259690719436",
+    appId: "1:259690719436:web:cc1291b9356f81442ffa69",
+    measurementId: "G-MLVQBEF6RK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
     <script src="js/datos.js"></script>
+    
 </body>
 </html>
